@@ -36,7 +36,7 @@
         {
             this.Calendar = this.Factory.CreateRibbonTab();
             this.JitsiMeet = this.Factory.CreateRibbonGroup();
-            this.buttonNewJitsiMeeting = this.Factory.CreateRibbonButton();
+            this.buttonNewLeafMeeting = this.Factory.CreateRibbonButton();
             this.Calendar.SuspendLayout();
             this.JitsiMeet.SuspendLayout();
             this.SuspendLayout();
@@ -51,19 +51,19 @@
             // 
             // JitsiMeet
             // 
-            this.JitsiMeet.Items.Add(this.buttonNewJitsiMeeting);
-            this.JitsiMeet.Label = "Jitsi Meet";
-            this.JitsiMeet.Name = "JitsiMeet";
+            this.JitsiMeet.Items.Add(this.buttonNewLeafMeeting);
+            this.JitsiMeet.Label = "Leaf";
+            this.JitsiMeet.Name = "Leaf";
             this.JitsiMeet.Position = this.Factory.RibbonPosition.BeforeOfficeId("GroupGoto");
             // 
-            // buttonNewJitsiMeeting
+            // buttonNewLeafMeeting
             // 
-            this.buttonNewJitsiMeeting.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
-            this.buttonNewJitsiMeeting.Image = global::JitsiMeetOutlook.Properties.Resources.jitsiLogo_square;
-            this.buttonNewJitsiMeeting.Label = "New Jitsi Meeting";
-            this.buttonNewJitsiMeeting.Name = "buttonNewJitsiMeeting";
-            this.buttonNewJitsiMeeting.ShowImage = true;
-            this.buttonNewJitsiMeeting.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.buttonNewJitsiMeeting_Click);
+            this.buttonNewLeafMeeting.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
+            this.buttonNewLeafMeeting.Image = global::JitsiMeetOutlook.Properties.Resources.jitsiLogo_square;
+            this.buttonNewLeafMeeting.Label = "New Leaf Meeting";
+            this.buttonNewLeafMeeting.Name = "buttonNewLeafMeeting";
+            this.buttonNewLeafMeeting.ShowImage = true;
+            this.buttonNewLeafMeeting.Click += new Microsoft.Office.Tools.Ribbon.RibbonControlEventHandler(this.buttonNewJitsiMeeting_Click);
             // 
             // CalendarRibbonButton
             // 
@@ -83,7 +83,7 @@
 
         internal Microsoft.Office.Tools.Ribbon.RibbonTab Calendar;
         internal Microsoft.Office.Tools.Ribbon.RibbonGroup JitsiMeet;
-        internal Microsoft.Office.Tools.Ribbon.RibbonButton buttonNewJitsiMeeting;
+        internal Microsoft.Office.Tools.Ribbon.RibbonButton buttonNewLeafMeeting;
     }
 
     partial class ThisRibbonCollection
