@@ -17,7 +17,7 @@ namespace JitsiMeetOutlook
             InitializeComponent();
 
             // Set default domain
-            defaultDomain = "meet.jit.si";
+            defaultDomain = "meet.modesttree.com";
 
             // Set radio buttons
             loadDomainButtons();

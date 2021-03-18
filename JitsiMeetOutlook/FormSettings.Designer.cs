@@ -497,7 +497,7 @@
             this.Name = "FormSettings";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
-            this.Text = "Jitsi Meet Settings";
+            this.Text = "Leaf Settings";
             this.TopMost = true;
             this.Load += new System.EventHandler(this.Form1_Load);
             this.menuStrip1.ResumeLayout(false);

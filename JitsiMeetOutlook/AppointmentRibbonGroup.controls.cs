@@ -76,7 +76,7 @@ namespace JitsiMeetOutlook
 
         public string findRoomId()
         {
-            string roomId = Regex.Match(appointmentItem.Body, "(?<=" + escapeDomain() + ")\\S+?(?=(#config|&config|\\s))").Value; // Match all non-blanks after jitsi url and before config or end
+            string roomId = Regex.Match(appointmentItem.Body, "(?<=" + escapeDomain() + ")\\S+?(?=(#config|&config|\\s))").Value; // Match all non-blanks after Leaf url and before config or end
             return roomId;
         }
 

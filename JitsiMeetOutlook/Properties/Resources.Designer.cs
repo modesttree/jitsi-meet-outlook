@@ -65,7 +65,7 @@ namespace JitsiMeetOutlook.Properties {
         /// </summary>
         internal static System.Drawing.Bitmap jitsiLogo_square {
             get {
-                object obj = ResourceManager.GetObject("jitsiLogo_square", resourceCulture);
+                object obj = ResourceManager.GetObject("Leaf-logo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
