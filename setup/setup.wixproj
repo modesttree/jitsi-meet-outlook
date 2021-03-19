@@ -32,8 +32,8 @@
     </WixExtension>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\JitsiMeetOutlook\JitsiMeetOutlook.csproj">
-      <Name>JitsiMeetOutlook</Name>
+    <ProjectReference Include="..\LeafOutlook\LeafOutlook.csproj">
+      <Name>LeafOutlook</Name>
       <Project>{92dd44f5-9b8c-4d40-ae0e-9b1edee99449}</Project>
       <Private>True</Private>
       <DoNotHarvest>True</DoNotHarvest>

@@ -2,7 +2,7 @@
 using Outlook = Microsoft.Office.Interop.Outlook;
 using System.Text.RegularExpressions;
 
-namespace JitsiMeetOutlook
+namespace LeafOutlook
 {
     public partial class AppointmentRibbonGroup
     {

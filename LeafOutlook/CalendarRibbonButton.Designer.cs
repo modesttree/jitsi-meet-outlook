@@ -1,4 +1,4 @@
-﻿namespace JitsiMeetOutlook
+﻿namespace LeafOutlook
 {
     partial class CalendarRibbonButton : Microsoft.Office.Tools.Ribbon.RibbonBase
     {
@@ -59,7 +59,7 @@
             // buttonNewLeafMeeting
             // 
             this.buttonNewLeafMeeting.ControlSize = Microsoft.Office.Core.RibbonControlSize.RibbonControlSizeLarge;
-            this.buttonNewLeafMeeting.Image = global::JitsiMeetOutlook.Properties.Resources.jitsiLogo_square;
+            this.buttonNewLeafMeeting.Image = global::LeafOutlook.Properties.Resources.jitsiLogo_square;
             this.buttonNewLeafMeeting.Label = "New Leaf Meeting";
             this.buttonNewLeafMeeting.Name = "buttonNewLeafMeeting";
             this.buttonNewLeafMeeting.ShowImage = true;

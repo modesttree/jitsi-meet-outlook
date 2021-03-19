@@ -1,6 +1,6 @@
 ﻿using Microsoft.Office.Tools.Ribbon;
 
-namespace JitsiMeetOutlook
+namespace LeafOutlook
 {
     public partial class CalendarRibbonButton
     {

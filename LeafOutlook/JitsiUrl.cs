@@ -10,7 +10,7 @@ using System.Text.Json;
 using Diacritics.Extensions;
 using System.Text.RegularExpressions;
 
-namespace JitsiMeetOutlook
+namespace LeafOutlook
 {
     public static class JitsiUrl
 

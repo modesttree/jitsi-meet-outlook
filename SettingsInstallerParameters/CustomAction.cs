@@ -29,7 +29,7 @@ namespace SettingsInstallerParameters
         private static void updateConfigXml(Session session)
         {
             // Write install path to config file
-            string xmlPath = Path.Combine(getInstallDir(session), "Jitsi Meet Outlook Add-In.dll.config");
+            string xmlPath = Path.Combine(getInstallDir(session), "Leaf Outlook Add-In Add-In.dll.config");
 
             XmlDocument document = new XmlDocument();
             document.Load(xmlPath);
@@ -39,33 +39,33 @@ namespace SettingsInstallerParameters
             if (getDomain(session).Length != 0)
             {
                 session.Log($"Setting custom domain: {getDomain(session)}");
-                navigator.SelectSingleNode(@"/configuration/userSettings/JitsiMeetOutlook.Properties.Settings/setting[@name='Domain']/value").SetValue(getDomain(session));
+                navigator.SelectSingleNode(@"/configuration/userSettings/LeafOutlook.Properties.Settings/setting[@name='Domain']/value").SetValue(getDomain(session));
             }
 
             
             if (getRoomID(session).Length != 0)
             {
                 session.Log($"Setting custom room ID: {getRoomID(session)}");
-                navigator.SelectSingleNode(@"/configuration/userSettings/JitsiMeetOutlook.Properties.Settings/setting[@name='roomID']/value").SetValue(getRoomID(session));
+                navigator.SelectSingleNode(@"/configuration/userSettings/LeafOutlook.Properties.Settings/setting[@name='roomID']/value").SetValue(getRoomID(session));
             }
 
             session.Log($"Setting require name option: {getRequireDisplayName(session)}");
-            navigator.SelectSingleNode(@"/configuration/userSettings/JitsiMeetOutlook.Properties.Settings/setting[@name='requireDisplayName']/value").SetValue(getRequireDisplayName(session));
+            navigator.SelectSingleNode(@"/configuration/userSettings/LeafOutlook.Properties.Settings/setting[@name='requireDisplayName']/value").SetValue(getRequireDisplayName(session));
 
             session.Log($"Setting audio muted option: {getStartWithAudioMuted(session)}");
-            navigator.SelectSingleNode(@"/configuration/userSettings/JitsiMeetOutlook.Properties.Settings/setting[@name='startWithAudioMuted']/value").SetValue(getStartWithAudioMuted(session));
+            navigator.SelectSingleNode(@"/configuration/userSettings/LeafOutlook.Properties.Settings/setting[@name='startWithAudioMuted']/value").SetValue(getStartWithAudioMuted(session));
 
             session.Log($"Setting video muted option: {getStartWithVideoMuted(session)}");
-            navigator.SelectSingleNode(@"/configuration/userSettings/JitsiMeetOutlook.Properties.Settings/setting[@name='startWithVideoMuted']/value").SetValue(getStartWithVideoMuted(session));
+            navigator.SelectSingleNode(@"/configuration/userSettings/LeafOutlook.Properties.Settings/setting[@name='startWithVideoMuted']/value").SetValue(getStartWithVideoMuted(session));
 
             session.Log($"Setting install directory: {getInstallDir(session)}");
-            navigator.SelectSingleNode(@"/configuration/userSettings/JitsiMeetOutlook.Properties.Settings/setting[@name='installDirectory']/value").SetValue(getInstallDir(session));
+            navigator.SelectSingleNode(@"/configuration/userSettings/LeafOutlook.Properties.Settings/setting[@name='installDirectory']/value").SetValue(getInstallDir(session));
 
             session.Log($"Setting display language: {getLanguage(session)}");
-            navigator.SelectSingleNode(@"/configuration/userSettings/JitsiMeetOutlook.Properties.Settings/setting[@name='language']/value").SetValue(getLanguage(session));
+            navigator.SelectSingleNode(@"/configuration/userSettings/LeafOutlook.Properties.Settings/setting[@name='language']/value").SetValue(getLanguage(session));
 
             session.Log($"Setting random ID generator mode: {getLanguage(session)}");
-            navigator.SelectSingleNode(@"/configuration/userSettings/JitsiMeetOutlook.Properties.Settings/setting[@name='randomRoomIdGeneratorMode']/value").SetValue(getRandomRoomIdGeneratorMode(session));
+            navigator.SelectSingleNode(@"/configuration/userSettings/LeafOutlook.Properties.Settings/setting[@name='randomRoomIdGeneratorMode']/value").SetValue(getRandomRoomIdGeneratorMode(session));
 
             session.Log($"Saving settings to: {xmlPath}");
             document.Save(xmlPath);

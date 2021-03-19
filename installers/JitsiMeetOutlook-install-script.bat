@@ -14,10 +14,10 @@ set LANG=en
 ::======================
 :: Plugin URL and paths
 ::======================
-set origin=https://github.com/timetheoretical/jitsi-meet-outlook/releases/download/v0.6.0/JitsiMeetOutlook-v0.6.0-windows-anycpu.msi
-set target=%ProgramFiles%\Jitsi Meet Outlook
-:: if x86 version, use target=%ProgramFiles(x86)%\Jitsi Meet Outlook
-:: if x64 version, use target=%ProgramFiles%\Jitsi Meet Outlook
+set origin=https://github.com/timetheoretical/jitsi-meet-outlook/releases/download/v0.6.0/LeafOutlook-v0.6.0-windows-anycpu.msi
+set target=%ProgramFiles%\Leaf Outlook
+:: if x86 version, use target=%ProgramFiles(x86)%\Leaf Outlook
+:: if x64 version, use target=%ProgramFiles%\Leaf Outlook
 
 
 ::===============
@@ -29,7 +29,7 @@ IF EXIST %target% (
 ) ELSE ( 
     ECHO No previous installation found.
 )
-ECHO Downloading plugin Jitsi-Meet-Outlook...
+ECHO Downloading plugin Leaf-Outlook...
 :PowerShell
 SET PSScript=%TEMP%\~tmpDlFile.ps1
 IF EXIST "%PSScript%" DEL /Q /F "%PSScript%"
