@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30002.166
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "JitsiMeetOutlook", "JitsiMeetOutlook\JitsiMeetOutlook.csproj", "{92DD44F5-9B8C-4D40-AE0E-9B1EDEE99449}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeafOutlook", "LeafOutlook\LeafOutlook.csproj", "{92DD44F5-9B8C-4D40-AE0E-9B1EDEE99449}"
 EndProject
 Project("{930C7802-8A8C-48F9-8165-68863BCCD9DD}") = "setup", "setup\setup.wixproj", "{85009CC8-078D-40E6-B4A5-F097D6B04C72}"
 EndProject

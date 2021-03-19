@@ -1,4 +1,4 @@
-﻿namespace JitsiMeetOutlook
+﻿namespace LeafOutlook
 {
     partial class AppointmentRibbonGroup : Microsoft.Office.Tools.Ribbon.RibbonBase
     {

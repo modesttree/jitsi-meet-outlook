@@ -5,7 +5,7 @@ using MessageBox = System.Windows.Forms.MessageBox;
 using System.Linq;
 using System.Text.Json;
 
-namespace JitsiMeetOutlook
+namespace LeafOutlook
 {
     public partial class FormSettings : Form
     {

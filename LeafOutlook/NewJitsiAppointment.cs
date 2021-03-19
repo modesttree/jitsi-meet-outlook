@@ -2,7 +2,7 @@
 using Outlook = Microsoft.Office.Interop.Outlook;
 using MessageBox = System.Windows.Forms.MessageBox;
 
-namespace JitsiMeetOutlook
+namespace LeafOutlook
 {
     class NewJitsiAppointment
     {

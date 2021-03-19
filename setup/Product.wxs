@@ -11,11 +11,11 @@
 	<?endif ?>
 	
 	<!-- Set project variables -->
-	<?define JitsiMeetOutlook_TargetDir=$(var.JitsiMeetOutlook.TargetDir)?>
-	<?define JitsiMeetOutlook_ProjectName="Jitsi Meet Outlook Add-In"?>
+	<?define LeafOutlook_TargetDir=$(var.LeafOutlook.TargetDir)?>
+	<?define LeafOutlook_ProjectName="Leaf Outlook Add-In"?>
 
 	<!-- Addon details -->
-	<Product Id="*" Name="Jitsi Meet Outlook Add-In" Language="1033" Version="0.6.4" Manufacturer="github.com/timetheoretical" UpgradeCode="146f17e9-8106-4dd3-a3c5-b8f2c92ffb25">
+	<Product Id="*" Name="Leaf Outlook Add-In" Language="1033" Version="0.6.4" Manufacturer="github.com/timetheoretical" UpgradeCode="146f17e9-8106-4dd3-a3c5-b8f2c92ffb25">
 		
 		<Package InstallerVersion="500" Compressed="yes" Platform="x64" InstallScope="perMachine" />
 
@@ -70,7 +70,7 @@
 		<!-- Reference custom action to update settings xml -->
 		<CustomAction Id="UpdateConfigXml" BinaryKey="SettingsInstallerParameters.CA" DllEntry="UpdateConfigXml" Execute="deferred" Return="check" Impersonate="no" />
 		<CustomAction Id="SetCMDParameters" Property="UpdateConfigXml" Value="InstallDir=[INSTALLFOLDER];Domain=[DOMAIN];roomID=[ROOMID];requireDisplayName=[REQNAME];startWithAudioMuted=[NOAUDIO];startWithVideoMuted=[NOVIDEO];language=[LANG];randomRoomIdGeneratorMode=[MODE]" />
-		<Binary Id="SettingsInstallerParameters.CA" SourceFile="$(var.JitsiMeetOutlook.ProjectDir)..\SettingsInstallerParameters\bin\Release\SettingsInstallerParameters.CA.dll" />
+		<Binary Id="SettingsInstallerParameters.CA" SourceFile="$(var.LeafOutlook.ProjectDir)..\SettingsInstallerParameters\bin\Release\SettingsInstallerParameters.CA.dll" />
 		
 		<InstallExecuteSequence>
 			<Custom Action="SetCMDParameters" Before="UpdateConfigXml" />
@@ -122,54 +122,54 @@
 	<Fragment>
 		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
 			<Component Id="Diacritics.dll">
-				<File Id="Diacritics.dll" Name="Diacritics.dll" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\Diacritics.dll" />
+				<File Id="Diacritics.dll" Name="Diacritics.dll" Source="$(var.LeafOutlook.ProjectDir)bin\Release\Diacritics.dll" />
 			</Component>
-			<Component Id="Jitsi_Meet_Outlook_AddIn.dll">
-				<File Id="Jitsi_Meet_Outlook_AddIn.dll" Name="Jitsi Meet Outlook Add-In.dll" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\Jitsi Meet Outlook Add-In.dll" />
+			<Component Id="Leaf_Outlook_AddIn.dll">
+				<File Id="Leaf_Outlook_AddIn.dll" Name="Leaf Outlook Add-In.dll" Source="$(var.LeafOutlook.ProjectDir)bin\Release\Leaf Outlook Add-In.dll" />
 			</Component>
-			<Component Id="Jitsi_Meet_Outlook_AddIn.dll.manifest">
-				<File Id="Jitsi_Meet_Outlook_AddIn.dll.manifest" Name="Jitsi Meet Outlook Add-In.dll.manifest" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\Jitsi Meet Outlook Add-In.dll.manifest" />
+			<Component Id="Leaf_Outlook_AddIn.dll.manifest">
+				<File Id="Leaf_Outlook_AddIn.dll.manifest" Name="Leaf Outlook Add-In.dll.manifest" Source="$(var.LeafOutlook.ProjectDir)bin\Release\Leaf Outlook Add-In.dll.manifest" />
 			</Component>
-			<Component Id="Jitsi_Meet_Outlook_AddIn.vsto">
-				<File Id="Jitsi_Meet_Outlook_AddIn.vsto" Name="Jitsi Meet Outlook Add-In.vsto" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\Jitsi Meet Outlook Add-In.vsto" />
+			<Component Id="Leaf_Outlook_AddIn.vsto">
+				<File Id="Leaf_Outlook_AddIn.vsto" Name="Leaf Outlook Add-In.vsto" Source="$(var.LeafOutlook.ProjectDir)bin\Release\Leaf Outlook Add-In.vsto" />
 			</Component>
-			<Component Id="Jitsi_Meet_Outlook_AddIn.dll.config">
-				<File Id="Jitsi_Meet_Outlook_AddIn.dll.config" Name="Jitsi Meet Outlook Add-In.dll.config" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\Jitsi Meet Outlook Add-In.dll.config" />
+			<Component Id="Leaf_Outlook_AddIn.dll.config">
+				<File Id="Leaf_Outlook_AddIn.dll.config" Name="Leaf Outlook Add-In.dll.config" Source="$(var.LeafOutlook.ProjectDir)bin\Release\Leaf Outlook Add-In.dll.config" />
 			</Component>
 		</ComponentGroup>
 		<ComponentGroup Id="Dependencies" Directory="INSTALLFOLDER">
 			<Component Id="Microsoft.Bcl.AsyncInterfaces.dll">
-				<File Id="Microsoft.Bcl.AsyncInterfaces.dll" Name="Microsoft.Bcl.AsyncInterfaces.dll" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\Microsoft.Bcl.AsyncInterfaces.dll" />
+				<File Id="Microsoft.Bcl.AsyncInterfaces.dll" Name="Microsoft.Bcl.AsyncInterfaces.dll" Source="$(var.LeafOutlook.ProjectDir)bin\Release\Microsoft.Bcl.AsyncInterfaces.dll" />
 			</Component>
 			<Component Id="Microsoft.Office.Tools.Common.v4.0.Utilities.dll">
-				<File Id="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" Name="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll" />
+				<File Id="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" Name="Microsoft.Office.Tools.Common.v4.0.Utilities.dll" Source="$(var.LeafOutlook.ProjectDir)bin\Release\Microsoft.Office.Tools.Common.v4.0.Utilities.dll" />
 			</Component>
 			<Component Id="Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll">
-				<File Id="Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll" Name="Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll" />
+				<File Id="Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll" Name="Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll" Source="$(var.LeafOutlook.ProjectDir)bin\Release\Microsoft.Office.Tools.Outlook.v4.0.Utilities.dll" />
 			</Component>
 			<Component Id="System.Buffers.dll">
-				<File Id="System.Buffers.dll" Name="System.Buffers.dll" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\System.Buffers.dll" />
+				<File Id="System.Buffers.dll" Name="System.Buffers.dll" Source="$(var.LeafOutlook.ProjectDir)bin\Release\System.Buffers.dll" />
 			</Component>
 			<Component Id="System.Memory.dll">
-				<File Id="System.Memory.dll" Name="System.Memory.dll" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\System.Memory.dll" />
+				<File Id="System.Memory.dll" Name="System.Memory.dll" Source="$(var.LeafOutlook.ProjectDir)bin\Release\System.Memory.dll" />
 			</Component>
 			<Component Id="System.Threading.Tasks.Extensions.dll">
-				<File Id="System.Threading.Tasks.Extensions.dll" Name="System.Threading.Tasks.Extensions.dll" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\System.Threading.Tasks.Extensions.dll" />
+				<File Id="System.Threading.Tasks.Extensions.dll" Name="System.Threading.Tasks.Extensions.dll" Source="$(var.LeafOutlook.ProjectDir)bin\Release\System.Threading.Tasks.Extensions.dll" />
 			</Component>
 			<Component Id="System.ValueTuple.dll">
-				<File Id="System.ValueTuple.dll" Name="System.ValueTuple.dll" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\System.ValueTuple.dll" />
+				<File Id="System.ValueTuple.dll" Name="System.ValueTuple.dll" Source="$(var.LeafOutlook.ProjectDir)bin\Release\System.ValueTuple.dll" />
 			</Component>
 			<Component Id="System.Numerics.Vectors.dll">
-				<File Id="System.Numerics.Vectors.dll" Name="System.Numerics.Vectors.dll" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\System.Numerics.Vectors.dll" />
+				<File Id="System.Numerics.Vectors.dll" Name="System.Numerics.Vectors.dll" Source="$(var.LeafOutlook.ProjectDir)bin\Release\System.Numerics.Vectors.dll" />
 			</Component>
 			<Component Id="System.Runtime.CompilerServices.Unsafe.dll">
-				<File Id="System.Runtime.CompilerServices.Unsafe.dll" Name="System.Runtime.CompilerServices.Unsafe.dll" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\System.Runtime.CompilerServices.Unsafe.dll" />
+				<File Id="System.Runtime.CompilerServices.Unsafe.dll" Name="System.Runtime.CompilerServices.Unsafe.dll" Source="$(var.LeafOutlook.ProjectDir)bin\Release\System.Runtime.CompilerServices.Unsafe.dll" />
 			</Component>
 			<Component Id="System.Text.Encodings.Web.dll">
-				<File Id="System.Text.Encodings.Web.dll" Name="System.Text.Encodings.Web.dll" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\System.Text.Encodings.Web.dll" />
+				<File Id="System.Text.Encodings.Web.dll" Name="System.Text.Encodings.Web.dll" Source="$(var.LeafOutlook.ProjectDir)bin\Release\System.Text.Encodings.Web.dll" />
 			</Component>
 			<Component Id="System.Text.Json.dll">
-				<File Id="System.Text.Json.dll" Name="System.Text.Json.dll" Source="$(var.JitsiMeetOutlook.ProjectDir)bin\Release\System.Text.Json.dll" />
+				<File Id="System.Text.Json.dll" Name="System.Text.Json.dll" Source="$(var.LeafOutlook.ProjectDir)bin\Release\System.Text.Json.dll" />
 			</Component>
 		</ComponentGroup>
 	</Fragment>

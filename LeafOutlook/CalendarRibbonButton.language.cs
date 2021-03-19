@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 
-namespace JitsiMeetOutlook
+namespace LeafOutlook
 {
     public partial class CalendarRibbonButton
     {

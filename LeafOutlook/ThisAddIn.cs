@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-namespace JitsiMeetOutlook
+namespace LeafOutlook
 {
     public partial class ThisAddIn
     {
@@ -40,7 +40,7 @@ namespace JitsiMeetOutlook
 
         private bool isTxtOlderThanInstallation()
         {
-            string mainDllPath = Path.Combine(Properties.Settings.Default.installDirectory, "Jitsi Meet Outlook Add-In.dll.config");
+            string mainDllPath = Path.Combine(Properties.Settings.Default.installDirectory, "Leaf Outlook Add-In.dll.config");
 
             FileInfo infoMainDll = new FileInfo(mainDllPath);
             FileInfo infoFirstRunTxt = new FileInfo(firstRunMarkerFilePath());

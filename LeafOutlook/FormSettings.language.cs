@@ -2,7 +2,7 @@
 using System.Text.Json;
 
 
-namespace JitsiMeetOutlook
+namespace LeafOutlook
 {
     partial class FormSettings
     {

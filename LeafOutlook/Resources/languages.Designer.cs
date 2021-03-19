@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace JitsiMeetOutlook.Resources {
+namespace LeafOutlook.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace JitsiMeetOutlook.Resources {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("JitsiMeetOutlook.Resources.languages", typeof(languages).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("LeafOutlook.Resources.languages", typeof(languages).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
