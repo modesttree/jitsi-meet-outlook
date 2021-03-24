@@ -63,7 +63,8 @@
 		<!-- Installer UI -->
 		<UIRef Id="WixUI_InstallDir" />
 		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
-
+		<Property Id="MsiLogging" Value="voicewarmupx!"/>
+		
 		<!--Specify the EULA file to use-->
 		<WixVariable Id="WixUILicenseRtf" Value="gpl-3.0.rtf" />
 		
