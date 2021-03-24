@@ -29,7 +29,7 @@ namespace SettingsInstallerParameters
         private static void updateConfigXml(Session session)
         {
             // Write install path to config file
-            string xmlPath = Path.Combine(getInstallDir(session), "Leaf Outlook Add-In Add-In.dll.config");
+            string xmlPath = Path.Combine(getInstallDir(session), "Leaf Outlook Add-In.dll.config");
 
             XmlDocument document = new XmlDocument();
             document.Load(xmlPath);
