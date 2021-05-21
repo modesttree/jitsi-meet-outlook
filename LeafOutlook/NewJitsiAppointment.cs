@@ -27,7 +27,6 @@ namespace LeafOutlook
                 // Create meeting object
                 newAppointment = (Outlook.AppointmentItem) application.CreateItem(Outlook.OlItemType.olAppointmentItem);
 
-
                 // Appointment details
                 newAppointment.MeetingStatus = Outlook.OlMeetingStatus.olMeeting;
                 newAppointment.Location = "Leaf Meet";
