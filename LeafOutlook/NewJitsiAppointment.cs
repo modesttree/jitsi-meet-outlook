@@ -30,7 +30,7 @@ namespace LeafOutlook
 
                 // Appointment details
                 newAppointment.MeetingStatus = Outlook.OlMeetingStatus.olMeeting;
-                newAppointment.Location = "Leaf";
+                newAppointment.Location = "Leaf Meet";
                 newAppointment.Body = generateBody(jitsiRoomId);
 
                 // Set appointment date if selected in calendar
