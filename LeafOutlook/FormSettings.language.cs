@@ -27,6 +27,7 @@ namespace LeafOutlook
             this.labelRequireDisplayName.Text = Globals.ThisAddIn.getElementTranslation("settings", "labelRequireDisplayName");
             this.labelStartWithAudioMuted.Text = Globals.ThisAddIn.getElementTranslation("settings", "labelStartWithAudioMuted");
             this.labelStartWithVideoMuted.Text = Globals.ThisAddIn.getElementTranslation("settings", "labelStartWithVideoMuted");
+            this.labelRibbonOnEveryAppointment.Text = Globals.ThisAddIn.getElementTranslation("settings", "labelRibbonOnEveryAppointment");
             this.groupBoxLanguage.Text = Globals.ThisAddIn.getElementTranslation("settings", "groupBoxLanguage");
 
         }
