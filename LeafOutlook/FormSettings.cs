@@ -260,16 +260,9 @@ namespace LeafOutlook
 
         private void loadRibbonOnEveryAppointmentButtons()
         {
-            if (Properties.Settings.Default.showRibbonOnEveryAppointment)
-            {
-                radioButtonRibbonOnEveryAppointmentToggled.Checked = true;
-                radioButtonRibbonOnEveryAppointmentUntoggled.Checked = false;
-            }
-            else
-            {
-                radioButtonRibbonOnEveryAppointmentToggled.Checked = false;
-                radioButtonRibbonOnEveryAppointmentUntoggled.Checked = true;
-            }
+            bool showRibbon = Properties.Settings.Default.showRibbonOnEveryAppointment;
+            radioButtonRibbonOnEveryAppointmentToggled.Checked = showRibbon;
+            radioButtonRibbonOnEveryAppointmentUntoggled.Checked = !showRibbon;
         }
 
 
