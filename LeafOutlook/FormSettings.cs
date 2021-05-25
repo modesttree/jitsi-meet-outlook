@@ -168,14 +168,7 @@ namespace LeafOutlook
                 Properties.Settings.Default.startWithVideoMuted = false;
             }
 
-            if (radioButtonRibbonOnEveryAppointmentToggled.Checked)
-            {
-                Properties.Settings.Default.showRibbonOnEveryAppointment = true;
-            }
-            else
-            {
-                Properties.Settings.Default.showRibbonOnEveryAppointment = false;
-            }
+            Properties.Settings.Default.showRibbonOnEveryAppointment = radioButtonRibbonOnEveryAppointmentToggled.Checked;
 
             // Set language
             string languageSelection = (string) comboBoxLanguage.SelectedItem;
