@@ -24,7 +24,10 @@
       <Value Profile="(Default)">en</Value>
     </Setting>
     <Setting Name="randomRoomIdGeneratorMode" Type="System.String" Scope="User">
-      <Value Profile="(Default)">phrase</Value>
+      <Value Profile="(Default)">string</Value>
+    </Setting>
+    <Setting Name="showRibbonOnEveryAppointment" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
     </Setting>
   </Settings>
 </SettingsFile>

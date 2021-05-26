@@ -61,6 +61,9 @@ namespace SettingsInstallerParameters
             session.Log($"Setting install directory: {getInstallDir(session)}");
             navigator.SelectSingleNode(@"/configuration/userSettings/LeafOutlook.Properties.Settings/setting[@name='installDirectory']/value").SetValue(getInstallDir(session));
 
+            session.Log($"Setting showRibbonOnEveryAppointment: {getshowRibbonOnEveryAppointment(session)}");
+            navigator.SelectSingleNode(@"/configuration/userSettings/JitsiMeetOutlook.Properties.Settings/setting[@name='showRibbonOnEveryAppointment']/value").SetValue(getshowRibbonOnEveryAppointment(session));
+
             session.Log($"Setting display language: {getLanguage(session)}");
             navigator.SelectSingleNode(@"/configuration/userSettings/LeafOutlook.Properties.Settings/setting[@name='language']/value").SetValue(getLanguage(session));
 
@@ -101,6 +104,10 @@ namespace SettingsInstallerParameters
             return getBooleanParameter(session, "startWithVideoMuted");
         }
 
+        private static string getshowRibbonOnEveryAppointment(Session session)
+        {
+            return getBooleanParameter(session, "showRibbonOnEveryAppointment");
+        }
         private static string getLanguage(Session session)
         {
             string[] availableLanguages = { "de", "en", "fr", "ru" };

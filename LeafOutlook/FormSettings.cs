@@ -25,6 +25,7 @@ namespace LeafOutlook
             loadStartWithAudioMutedButtons();
             loadStartWithVideoMutedButtons();
             loadRequireDisplayNameButtons();
+            loadRibbonOnEveryAppointmentButtons();
 
             // Load text field
             textBoxDomain.Text = Properties.Settings.Default.Domain;
@@ -167,6 +168,8 @@ namespace LeafOutlook
                 Properties.Settings.Default.startWithVideoMuted = false;
             }
 
+            Properties.Settings.Default.showRibbonOnEveryAppointment = radioButtonRibbonOnEveryAppointmentToggled.Checked;
+
             // Set language
             string languageSelection = (string) comboBoxLanguage.SelectedItem;
             Properties.Settings.Default.language = languageDropDown.FirstOrDefault(x => x.Value == languageSelection).Key;
@@ -255,6 +258,14 @@ namespace LeafOutlook
             }
         }
 
+        private void loadRibbonOnEveryAppointmentButtons()
+        {
+            bool showRibbon = Properties.Settings.Default.showRibbonOnEveryAppointment;
+            radioButtonRibbonOnEveryAppointmentToggled.Checked = showRibbon;
+            radioButtonRibbonOnEveryAppointmentUntoggled.Checked = !showRibbon;
+        }
+
+
         private void loadStartWithVideoMutedButtons()
         {
             if (Properties.Settings.Default.startWithVideoMuted)
@@ -279,11 +290,6 @@ namespace LeafOutlook
         {
             JsonElement jsonUILanguage = Globals.ThisAddIn.getLanguageJsonRoot().GetProperty("settings");
             comboBoxRandomGeneratorMode.SelectedItem = jsonUILanguage.GetProperty("comboBoxRandomGeneratorMode").GetProperty(Properties.Settings.Default.randomRoomIdGeneratorMode).GetString();
-        }
-
-        private void comboBoxLanguage_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
