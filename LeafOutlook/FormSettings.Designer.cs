@@ -543,7 +543,7 @@
             this.labelRibbonOnEveryAppointment.Name = "labelRibbonOnEveryAppointment";
             this.labelRibbonOnEveryAppointment.Size = new System.Drawing.Size(350, 40);
             this.labelRibbonOnEveryAppointment.TabIndex = 1;
-            this.labelRibbonOnEveryAppointment.Text = "Show Jitsi Ribbon in every Appointment";
+            this.labelRibbonOnEveryAppointment.Text = "Show Leaf Ribbon in every Appointment";
             // 
             // radioButtonRibbonOnEveryAppointmentToggled
             // 
