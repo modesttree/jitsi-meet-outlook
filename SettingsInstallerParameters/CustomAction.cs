@@ -62,7 +62,7 @@ namespace SettingsInstallerParameters
             navigator.SelectSingleNode(@"/configuration/userSettings/LeafOutlook.Properties.Settings/setting[@name='installDirectory']/value").SetValue(getInstallDir(session));
 
             session.Log($"Setting showRibbonOnEveryAppointment: {getshowRibbonOnEveryAppointment(session)}");
-            navigator.SelectSingleNode(@"/configuration/userSettings/JitsiMeetOutlook.Properties.Settings/setting[@name='showRibbonOnEveryAppointment']/value").SetValue(getshowRibbonOnEveryAppointment(session));
+            navigator.SelectSingleNode(@"/configuration/userSettings/LeafOutlook.Properties.Settings/setting[@name='showRibbonOnEveryAppointment']/value").SetValue(getshowRibbonOnEveryAppointment(session));
 
             session.Log($"Setting display language: {getLanguage(session)}");
             navigator.SelectSingleNode(@"/configuration/userSettings/LeafOutlook.Properties.Settings/setting[@name='language']/value").SetValue(getLanguage(session));
@@ -135,9 +135,8 @@ namespace SettingsInstallerParameters
             }
             else
             {
-                return "phrase";
+                return "string";
             }
-
         }
 
 

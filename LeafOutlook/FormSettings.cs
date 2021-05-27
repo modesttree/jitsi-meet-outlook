@@ -17,7 +17,7 @@ namespace LeafOutlook
             InitializeComponent();
 
             // Set default domain
-            defaultDomain = "meet.modesttree.com";
+            defaultDomain = "meet.renk-group.com";
 
             // Set radio buttons
             loadDomainButtons();

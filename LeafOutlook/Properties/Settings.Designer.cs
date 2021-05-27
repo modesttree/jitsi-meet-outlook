@@ -29,7 +29,7 @@ namespace LeafOutlook.Properties
 
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("meet.modesttree.com")]
+        [global::System.Configuration.DefaultSettingValueAttribute("meet.renk-group.com")]
         public string Domain
         {
             get
@@ -134,7 +134,7 @@ namespace LeafOutlook.Properties
 
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("phrase")]
+        [global::System.Configuration.DefaultSettingValueAttribute("string")]
         public string randomRoomIdGeneratorMode
         {
             get
@@ -149,7 +149,7 @@ namespace LeafOutlook.Properties
 
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
-        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        [global::System.Configuration.DefaultSettingValueAttribute("True")]
         public bool showRibbonOnEveryAppointment
         {
             get

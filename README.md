@@ -8,6 +8,9 @@ It was created to fulfil [this](https://community.jitsi.org/t/plug-ins-for-addin
 
 The screenshots below display the features of implemented in this add-in.
 
+## Tips
+- If you run into any issues where the installer is ending prematurely, you can add an MSI logger that would spit out a log file in the temp folder to help you debug. See <a href="https://stackoverflow.com/questions/38249881/wix-toolset-default-logging-file-location" target="_blank">here</a> for details  
+
 ## Screenshots
 ### Calendar view
 <br/><img src="images/modified_calendar.png" width="500">
