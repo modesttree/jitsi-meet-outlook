@@ -6,7 +6,7 @@
     <ProductVersion>3.10</ProductVersion>
     <ProjectGuid>85009cc8-078d-40e6-b4a5-f097d6b04c72</ProjectGuid>
     <SchemaVersion>2.0</SchemaVersion>
-    <OutputName>setup</OutputName>
+    <OutputName>LeafOutlookPlugin</OutputName>
     <OutputType>Package</OutputType>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
