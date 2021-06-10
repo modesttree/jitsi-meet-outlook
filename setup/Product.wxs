@@ -65,7 +65,7 @@
 		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
 
 		<!--Specify the EULA file to use-->
-		<WixVariable Id="WixUILicenseRtf" Value="gpl-3.0.rtf" />
+		<WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
 		
 		<!-- Reference custom action to update settings xml -->
 		<CustomAction Id="UpdateConfigXml" BinaryKey="SettingsInstallerParameters.CA" DllEntry="UpdateConfigXml" Execute="deferred" Return="check" Impersonate="no" />
