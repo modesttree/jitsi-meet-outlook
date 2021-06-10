@@ -57,15 +57,18 @@
 		</Feature>
 
 		<!-- Set icon -->
-		<Icon Id="ProductIcon" SourceFile="$(var.ProjectDir)favicon.ico"/>
+		<Icon Id="ProductIcon" SourceFile="$(var.ProjectDir)images\favicon.ico"/>
 		<Property Id="ARPPRODUCTICON" Value="ProductIcon"/>
 
 		<!-- Installer UI -->
-		<UIRef Id="WixUI_InstallDir" />
+		<UIRef Id="CustomUI" />
 		<Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+		<Property Id="DOMAIN" Value="meet.modesttree.com" />
 
 		<!--Specify the EULA file to use-->
 		<WixVariable Id="WixUILicenseRtf" Value="License.rtf" />
+		<WixVariable Id="WixUIBannerBmp" Value="$(var.ProjectDir)images\LeafMeetBanner.bmp" />
+		<WixVariable Id="WixUIDialogBmp" Value="$(var.ProjectDir)images\LeafMeetDialog.bmp" />
 		
 		<!-- Reference custom action to update settings xml -->
 		<CustomAction Id="UpdateConfigXml" BinaryKey="SettingsInstallerParameters.CA" DllEntry="UpdateConfigXml" Execute="deferred" Return="check" Impersonate="no" />
